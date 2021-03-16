@@ -6,7 +6,7 @@ var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
 
 //The URL to the icon image. 
 var iconImageUrl = 'images/CoffeeIcon.png';
-
+var shapeFileURL = 'data/Wessex_map.shp';
 //An array of country region ISO2 values to limit searches to.
 var countrySet = ['GB'];
 
@@ -41,13 +41,12 @@ map.layers.add(layers, 'labels');
 
 //Add a click event to the layers to show a popup of what the user clicked on.
 map.events.add('click', layers, featureClicked);
-            });
-        }
 
-function loadShapeFile(data/Wessex_Map.shp) {
+
+function loadShapeFile(shapeFileURL) {
 popup.close();
 
-shp(data / Wessex_Map.shp).then(function (data) {
+    shp(shapeFileURL).then(function (data) {
     //Load the shapefile into the data source and overwrite any existing data. 
     datasource.setShapes(data);
 
