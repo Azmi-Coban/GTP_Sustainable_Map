@@ -16,10 +16,11 @@ var listItemTemplate = '<div class="listItem" onclick="itemSelected(\'{id}\')"><
 function initialize() {
     //Initialize a map instance.
     map = new atlas.Map('myMap', {
-        center: [0, 0],
-        zoom: 6,
+        center: [-1.5, 51],
+        zoom: 8,
         view: 'Auto',
-
+        minZoom: 8,
+      
         //Add authentication details for connecting to Azure Maps.
         authOptions: {
             //Use Azure Active Directory authentication.
