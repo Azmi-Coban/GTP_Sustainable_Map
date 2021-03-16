@@ -5,7 +5,7 @@ var maxClusterZoomLevel = 5;
 var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
 
 //The URL to the icon image. 
-var iconImageUrl = 'images/CoffeeIcon.png';
+var iconImageUrl = '<div><div class=\'pin bounce\'></div><div class=\'pulse\'></div></div>';
 
 //An array of country region ISO2 values to limit searches to.
 var countrySet = ['GB'];
@@ -170,9 +170,7 @@ function initialize() {
             });
             map.markers.add(new atlas.HtmlMarker({
                 htmlContent: "<div><div class='pin bounce'></div><div class='pulse'></div></div>",
-                position: [-0.1406, 51.5018],
-                pixelOffset: [5, -18]
-            }));
+             }));
         });
     });
 }
