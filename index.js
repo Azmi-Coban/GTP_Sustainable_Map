@@ -167,6 +167,11 @@ function initialize() {
                 //Give the map a chance to move and render data before updating the list.
                 updateListItems();
             });
+            map.markers.add(new atlas.HtmlMarker({
+                htmlContent: "<div><div class='pin bounce'></div><div class='pulse'></div></div>",
+                position: [-0.1406, 51.5018],
+                pixelOffset: [5, -18]
+            }));
         });
     });
 }
