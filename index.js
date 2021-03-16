@@ -20,6 +20,7 @@ function initialize() {
         zoom: 8,
         view: 'Auto',
         minZoom: 8,
+        style: 'satellite',
       
         //Add authentication details for connecting to Azure Maps.
         authOptions: {
