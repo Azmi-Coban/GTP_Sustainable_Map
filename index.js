@@ -281,7 +281,7 @@ function setMapToUserLocation() {
 function updateListItems() {
     //Hide the center marker.
     centerMarker.setOptions({
-        visible: false
+        visible: true
     });
 
     //Get the current camera/view information for the map.
@@ -303,7 +303,7 @@ function updateListItems() {
         });
 
         //List the ten closest locations in the side panel.
-        var html = [], properties;
+        //var html = [], properties;
 
         /*
             Generating HTML for each item that looks like this:
