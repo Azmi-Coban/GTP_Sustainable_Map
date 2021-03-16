@@ -1,5 +1,5 @@
 //The maximum zoom level to cluster data point data on the map.
-var maxClusterZoomLevel = 11;
+var maxClusterZoomLevel = 9;
 
 //The URL to the store location data.
 var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
@@ -8,7 +8,7 @@ var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
 var iconImageUrl = 'images/CoffeeIcon.png';
 
 //An array of country region ISO2 values to limit searches to.
-var countrySet = ['US', 'CA', 'GB', 'FR', 'DE', 'IT', 'ES', 'NL', 'DK'];
+var countrySet = ['GB'];
 
 var map, popup, datasource, iconLayer, centerMarker, searchURL;
 var listItemTemplate = '<div class="listItem" onclick="itemSelected(\'{id}\')"><div class="listItem-title">{title}</div>{city}<br />Open until {closes}<br />{distance} miles away</div>';
@@ -16,8 +16,8 @@ var listItemTemplate = '<div class="listItem" onclick="itemSelected(\'{id}\')"><
 function initialize() {
     //Initialize a map instance.
     map = new atlas.Map('myMap', {
-        center: [-90, 40],
-        zoom: 2,
+        center: [0, 0],
+        zoom: 6,
         view: 'Auto',
 
         //Add authentication details for connecting to Azure Maps.
