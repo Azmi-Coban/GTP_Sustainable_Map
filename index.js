@@ -124,7 +124,7 @@ function initialize() {
             iconLayer = new atlas.layer.SymbolLayer(datasource, null, {
                 iconOptions: {
                     //Pass in the id of the custom icon that was loaded into the map resources.
-                    image: 'myCustomIcon',
+                    htmlContent: 'myCustomIcon',
 
                     //Optionally scale the size of the icon.
                     font: ['SegoeUi-Bold'],
@@ -168,9 +168,9 @@ function initialize() {
                 //Give the map a chance to move and render data before updating the list.
                 updateListItems();
             });
-            map.markers.add(new atlas.HtmlMarker({
+           /* map.markers.add(new atlas.HtmlMarker({
                 htmlContent: "<div><div class='pin bounce'></div><div class='pulse'></div></div>",
-             }));
+             }));*/
         });
     });
 }
