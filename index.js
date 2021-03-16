@@ -24,21 +24,7 @@ function initialize() {
       
         //Add authentication details for connecting to Azure Maps.
         authOptions: {
-            //Use Azure Active Directory authentication.
-            /*authType: 'anonymous',
-            clientId: "04ec075f-3827-4aed-9975-d56301a2d663", //Your Azure Maps Azure Active Directory account client id.
-            getToken: function (resolve, reject, map) {
-                //URL to your authentication service that retrieves an Azure Active Directory Token.
-                var tokenServiceUrl = "https://azuremapscodesamples.azurewebsites.net/Common/TokenService.ashx";
-
-                fetch(tokenServiceUrl).then(function (response) {
-                    return response.text();
-                }).then(function (token) {
-                    resolve(token);
-                });
-            }*/
-
-           //Alternatively, use an Azure Maps key. Get an Azure Maps key at https://azure.com/maps. NOTE: The primary key should be used as the key.
+            //Alternatively, use an Azure Maps key. Get an Azure Maps key at https://azure.com/maps. NOTE: The primary key should be used as the key.
            authType: 'subscriptionKey',
            subscriptionKey: 'pVKDHqucck9RtwJiPCYpLzNNdfqDO6F9032x_i7o-PQ'
         }
@@ -121,7 +107,7 @@ function initialize() {
         map.imageSprite.add('myCustomIcon', iconImageUrl).then(function () {
 
             //Create a layer to render a coffe cup symbol above each bubble for an individual location.
-            iconLayer = new atlas.layer.SymbolLayer(datasource, null, {
+           /* iconLayer = new atlas.layer.SymbolLayer(datasource, null, {
                 iconOptions: {
                     //Pass in the id of the custom icon that was loaded into the map resources.
                     htmlContent: 'myCustomIcon',
@@ -136,7 +122,10 @@ function initialize() {
                     allowOverlap: true
                 },
                 filter: ['!', ['has', 'point_count']] //Filter out clustered points from this layer.
-            });
+            });*/
+            iconLayer = new atlas.HtmlMarker(datasource, null, {
+            htmlContent: "<div><div class='pin bounce'></div><div class='pulse'></div></div>",
+            }));
 
             map.layers.add(iconLayer);
 
