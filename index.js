@@ -125,7 +125,7 @@ function initialize() {
             });*/
             iconLayer = new atlas.HtmlMarker(datasource, null, {
             htmlContent: "<div><div class='pin bounce'></div><div class='pulse'></div></div>",
-            }));
+            });
 
             map.layers.add(iconLayer);
 
