@@ -1,5 +1,5 @@
 //The maximum zoom level to cluster data point data on the map.
-var maxClusterZoomLevel = 11;
+var maxClusterZoomLevel = 5;
 
 //The URL to the store location data.
 var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
