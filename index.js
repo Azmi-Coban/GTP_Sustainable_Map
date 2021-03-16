@@ -1,5 +1,5 @@
 //The maximum zoom level to cluster data point data on the map.
-var maxClusterZoomLevel = 9;
+var maxClusterZoomLevel = 11;
 
 //The URL to the store location data.
 var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
@@ -281,7 +281,7 @@ function setMapToUserLocation() {
 function updateListItems() {
     //Hide the center marker.
     centerMarker.setOptions({
-        visible: true
+        visible: false
     });
 
     //Get the current camera/view information for the map.
@@ -303,7 +303,7 @@ function updateListItems() {
         });
 
         //List the ten closest locations in the side panel.
-        //var html = [], properties;
+        var html = [], properties;
 
         /*
             Generating HTML for each item that looks like this:
