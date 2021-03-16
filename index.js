@@ -123,9 +123,9 @@ function initialize() {
                 },
                 filter: ['!', ['has', 'point_count']] //Filter out clustered points from this layer.
             });*/
-            iconLayer = new atlas.HtmlMarker(datasource, null, {
-            htmlContent: "<div><div class='pin bounce'></div><div class='pulse'></div></div>",
-            });
+            map.markers.add(atlas.HtmlMarker(datasource, null, {
+                htmlContent: "<div><div class='pin bounce'></div><div class='pulse'></div></div>",
+            }));
 
             map.layers.add(iconLayer);
 
