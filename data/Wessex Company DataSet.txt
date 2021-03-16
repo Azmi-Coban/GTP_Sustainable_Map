@@ -1,0 +1,260 @@
+AddressLine	City	Municipality	AdminDivision	Country	PostCode	Latitude	Longitude	Phone	IsWiFiHotSpot	IsWheelchairAccessible	Opens	Closes
+Causewayhead	Penzance	Penzance	Cornwall	GB	TR182	50.11982	-5.53867	(0161) 715 461	False	False	900	2400
+Hyde Road	Paignton	Paignton	Devon	GB	TQ4 5	50.43722	-3.56653	(0161) 715 926	True	False	600	2300
+Vaughan Road	Torquay	Torquay	Devon	GB	TQ2 5	50.46095	-3.52609	(0161) 715 141	False	False	700	1800
+Union Street	Torquay	Torquay	Devon	GB	TQ2 5	50.46703	-3.52994	(0161) 715 315	False	True	800	2200
+School Street	Weymouth	Weymouth	Powys	GB	DT4 8	50.61071	-2.45486	(0161) 715 350	True	True	600	2300
+Kingland Road	Poole	Poole	Powys	GB	BH151	50.71822	-1.97893	(0161) 715 344	False	False	700	1800
+High Street	Exeter	Exeter	Devon	GB	EX4 3	50.72347	-3.53153	(0161) 715 530	False	True	800	2200
+High Street	Christchurch	Christchurch	Powys	GB	BH231	50.73483	-1.77761	(0161) 715 263	False	False	800	2200
+High Street	Lymington	Lymington	Hampshire	GB	SO419	50.75873	-1.53992	(0161) 715 395	False	True	800	2200
+Palmerston Road	Southsea	Southsea	Hampshire	GB	PO5 3	50.78507	-1.08878	(0161) 715 328	False	False	700	1800
+Bury Road	Alverstoke	Gosport	Hampshire	GB	PO123	50.79246	-1.14671	(0161) 715 884	False	True	800	2200
+Guildhall Walk	Portsmouth	Portsmouth	Hampshire	GB	PO1 2	50.79689	-1.09254	(0161) 715 947	True	True	730	2330
+Ann Street	Worthing	Worthing	West Sussex	GB	BN111	50.81201	-0.36857	(0161) 715 280	True	True	900	2400
+Kings Road	Brighton	Brighton	East Sussex	GB	BN1 2	50.82082	-0.14649	(0161) 715 138	False	False	700	1800
+Church Road	Hove	Hove	East Sussex	GB	BN3 2	50.8278	-0.17053	(0161) 715 594	True	True	700	1800
+East Street	Chichester	Chichester	West Sussex	GB	PO191	50.83642	-0.77836	(0161) 715 154	False	False	600	2300
+High Street	Cosham	Portsmouth	Hampshire	GB	PO6 3	50.84561	-1.06663	(0161) 715 646	False	False	900	2400
+Stallards Lane	Ringwood	Ringwood	Hampshire	GB	BH241	50.84823	-1.79396	(0161) 715 952	False	True	800	2200
+West Street	Havant	Havant	Hampshire	GB	PO9 1	50.85153	-0.98194	(0161) 715 358	False	True	600	2300
+South Terrace	Hastings	Hastings	East Sussex	GB	TN341	50.85782	0.58144	(0161) 715 294	False	False	800	2200
+Stakes Hill Road	Waterlooville	Waterlooville	Hampshire	GB	PO7 7	50.87918	-1.03209	(0161) 715 892	True	False	700	1800
+Ocean Way	Southampton	Southampton	Hampshire	GB	SO143	50.89665	-1.39314	(0161) 715 824	False	False	700	1800
+Above Bar Street	Southampton	Southampton	Hampshire	GB	SO147	50.90379	-1.40434	(0161) 715 211	True	True	700	1800
+Kingsway	Southampton	Southampton	Hampshire	GB	SO141	50.90566	-1.3976	(0161) 715 186	False	True	800	2200
+Civic Centre Road	Southampton	Southampton	Hampshire	GB	SO147	50.90711	-1.40689	(0161) 715 536	False	False	600	2300
+Blenheim Road	Eastleigh	Eastleigh	Hampshire	GB	SO505	50.96641	-1.35419	(0161) 715 128	True	True	600	2300
+Cann Street	Taunton	Taunton	Somerset	GB	TA1 4	51.01283	-3.10863	(0161) 715 851	True	True	700	1800
+High Street	Winchester	Winchester	Hampshire	GB	SO239	51.06235	-1.31409	(0161) 715 429	False	True	800	2200
+Friarsgate	Winchester	Winchester	Hampshire	GB	SO238	51.06336	-1.31221	(0161) 715 404	False	True	800	2200
+Minster Street	Wilton	Salisbury	Wiltshire	GB	SP2 0	51.08129	-1.85715	(0161) 715 855	True	True	900	2400
+High Street	Barnstaple	Barnstaple	Devon	GB	EX311	51.08198	-4.06124	(0161) 715 745	False	False	1000	2000
+Cambridge Road	Dover	Dover	Kent	GB	CT179	51.12187	1.31355	(0161) 715 795	False	False	700	1800
+High Street	Bridgwater	Bridgwater	Somerset	GB	TA6 3	51.12834	-3.00515	(0161) 715 108	False	True	700	1800
+Grosvenor Road	Tunbridge Wells	Tunbridge Wells	Kent	GB	TN1 2	51.13445	0.26366	(0161) 715 805	False	False	700	1800
+Edinburgh Road	Ashford	Ashford	Kent	GB	TN248	51.15057	0.87019	(0161) 715 417	False	False	800	2200
+High Street	Andover	Andover	Hampshire	GB	SP101	51.20804	-1.4793	(0161) 715 791	False	False	700	1800
+West Street	Farnham	Farnham	Surrey	GB	GU9 7	51.21443	-0.80094	(0161) 715 684	False	True	800	2200
+Victoria Road	Aldershot	Aldershot	Hampshire	GB	GU111	51.24839	-0.7655	(0161) 715 510	False	False	700	1800
+Market Place	Basingstoke	Basingstoke	Hampshire	GB	RG217	51.26259	-1.087	(0161) 715 140	True	True	900	2400
+Alencon Link	Basingstoke	Basingstoke	Hampshire	GB	RG217	51.26705	-1.09132	(0161) 715 300	False	False	600	2300
+Alencon Link	Basingstoke	Basingstoke	Hampshire	GB	RG217	51.26787	-1.08798	(0161) 715 182	False	True	800	2200
+Rose Lane	Canterbury	Canterbury	Kent	GB	CT1 2	51.27745	1.08053	(0161) 715 222	False	True	800	2200
+Kingsmead	Farnborough	Farnborough	Hampshire	GB	GU147	51.29167	-0.75376	(0161) 715 563	False	True	800	2200
+Eastmead	Farnborough	Farnborough	Hampshire	GB	GU147	51.29189	-0.7552	(0161) 715 802	False	False	600	2300
+High Street	Leatherhead	Leatherhead	Surrey	GB	KT228	51.29552	-0.32789	(0161) 715 976	False	True	800	2200
+St Stephens Place	Trowbridge	Trowbridge	Wiltshire	GB	BA148	51.31843	-2.20561	(0161) 715 323	True	True	700	1800
+Ashley Avenue	Epsom	Epsom	Surrey	GB	KT185	51.33168	-0.26825	(0161) 715 673	False	True	600	2300
+Queen Street	Ramsgate	Ramsgate	Kent	GB	CT119	51.33292	1.41848	(0161) 715 453	False	False	700	1800
+Throwley Way	Sutton	Sutton	Surrey	GB	SM1 4	51.36443	-0.19224	(0161) 715 786	False	True	800	2200
+Drummond Road	Croydon	Croydon	Surrey	GB	CR0 1	51.37516	-0.10326	(0161) 715 307	False	False	600	2300
+Hawley Street	Margate	Margate	Kent	GB	CT9 1	51.38864	1.38301	(0161) 715 926	False	False	700	1800
+Ringmead	Bracknell	Bracknell	Berkshire	GB	RG127	51.39417	-0.75076	(0161) 715 879	False	True	600	2300
+Union Street	Kingston Upon Thames	Kingston Upon Thames	Surrey	GB	KT1 1	51.40937	-0.30507	(0161) 715 704	False	False	700	1800
+The Ring	Bracknell	Bracknell	Berkshire	GB	RG121	51.41428	-0.75022	(0161) 715 657	True	True	900	2400
+Staines Road West	Sunbury on Thames	Sunbury on Thames	Middlesex	GB	TW167	51.41928	-0.42113	(0161) 715 338	False	False	700	1800
+Wells Road	Knowle	Bristol	Avon	GB	BS4 2	51.43447	-2.56689	(0161) 715 724	False	True	700	1800
+Bluewater Parkway	Greenhithe	Greenhithe	Kent	GB	DA9 9	51.44187	0.27798	(0161) 715 621	False	True	800	2200
+Catford Road	SE6	London	London	GB	SE6 4	51.44529	-0.02025	(0161) 715 902	True	True	600	2300
+Home Gardens	Dartford	Dartford	Kent	GB	DA1 1	51.44599	0.21906	(0161) 715 120	False	False	700	1800
+Broadmead	Broadmead	Bristol	Avon	GB	BS1 3	51.45732	-2.59031	(0161) 715 188	False	False	600	2300
+92 St Johns Hill	SW11	London	London	GB	SW111	51.46108	-0.17486	(0161) 715 125	False	True	800	2200
+Molesworth Street	SE13	London	London	GB	SE137	51.46231	-0.01285	(0161) 715 570	True	True	600	2300
+Putney High Street	SW15	London	London	GB	SW151	51.46303	-0.21616	(0161) 715 834	False	False	700	1800
+Priory Lane	SW15	London	London	GB	SW155	51.46303	-0.24992	(0161) 715 198	False	True	800	2200
+64 Garfield Road	SW11	London	London	GB	SW115	51.46567	-0.15178	(0161) 715 258	True	True	700	1800
+46 Culvert Road	SW11	London	London	GB	SW115	51.47189	-0.1597	(0161) 715 481	False	True	700	1800
+Rye Lane	SE15	London	London	GB	SE155	51.4726	-0.06965	(0161) 715 426	False	False	700	1800
+40 Bramah Green	SW9	London	London	GB	SW9 7	51.47501	-0.10821	(0161) 715 147	False	False	800	2200
+Orsett Road	Grays	Grays	Essex	GB	RM175	51.47908	0.32495	(0161) 715 575	False	False	600	2300
+Weston Avenue	West Thurrock	Grays	Essex	GB	RM203	51.48519	0.2729	(0161) 715 914	False	True	800	2200
+Kings Road	SW3	London	London	GB	SW3 5	51.48732	-0.16878	(0161) 715 166	False	True	800	2200
+100 Vauxhall Walk	SE11	London	London	GB	SE115	51.48896	-0.12074	(0161) 715 303	False	False	700	1800
+Hammersmith Road	W6	London	London	GB	W6  7	51.49291	-0.22405	(0161) 715 602	False	False	600	2300
+Elephant and Castle	SE1	London	London	GB	SE1 6	51.49362	-0.1005	(0161) 715 879	False	True	800	2200
+Buckingham Palace Road	SW1	London	London	GB	SW1W0	51.49417	-0.14656	(0161) 715 841	True	True	700	1800
+Deal Porters Way	SE16	London	London	GB	SE162	51.49506	-0.04913	(0161) 715 586	False	False	700	1800
+Shepherd Market	W1	London	London	GB	W1Y 7	51.50635	-0.14771	(0161) 715 378	False	True	700	1800
+High Street	W3	London	London	GB	W3  6	51.50693	-0.26962	(0161) 715 686	False	True	800	2200
+181 Piccadilly	W1	London	London	GB	W1V 9	51.50817	-0.13915	(0161) 715 931	False	True	800	2200
+Piccadilly	W1	London	London	GB	W1X 3	51.50824	-0.13975	(0161) 715 602	True	True	700	1800
+Piccadilly	W1	London	London	GB	W1V 9	51.50944	-0.13566	(0161) 715 128	False	False	900	2400
+210 Regent Street	W1	London	London	GB	W1R 7	51.51344	-0.14084	(0161) 715 295	False	False	800	2200
+The Broadway	W5	London	London	GB	W5  5	51.51364	-0.30363	(0161) 715 404	False	False	700	1800
+Shorts Gardens	WC2	London	London	GB	WC2H9	51.51422	-0.1264	(0161) 715 133	True	True	700	1800
+400 Oxford Street	W1	London	London	GB	W1R 1	51.51426	-0.1517	(0161) 715 476	False	True	800	2200
+Queensway	W2	London	London	GB	W2  6	51.51444	-0.18805	(0161) 715 283	True	True	1000	2000
+1 Whitechapel High Street	E1	London	London	GB	E1  7	51.51465	-0.07304	(0161) 715 279	False	False	700	1800
+290 Oxford Street	W1	London	London	GB	W1R 1	51.51495	-0.14533	(0161) 715 292	False	True	800	2200
+21 MacKlin Street	WC2	London	London	GB	WC2B5	51.51603	-0.12256	(0161) 715 705	False	False	700	1800
+Long Road	Canvey Island	Canvey Island	Essex	GB	SS8 0	51.52024	0.59058	(0161) 715 225	False	True	800	2200
+Broadway	Maidenhead	Maidenhead	Berkshire	GB	SL6 1	51.52134	-0.72121	(0161) 715 860	True	True	730	2330
+Foksville Road	Canvey Island	Canvey Island	Essex	GB	SS8 7	51.52234	0.59532	(0161) 715 736	False	False	700	1800
+Station Road	Westcliff on Sea	Westcliff on Sea	Essex	GB	SS0 7	51.53544	0.69736	(0161) 715 899	True	True	700	1800
+Broadway	E15	London	London	GB	E15 4	51.5406	0.00151	(0161) 715 748	False	False	700	1800
+Chichester Road	Southend on Sea	Southend on Sea	Essex	GB	SS2 5	51.54107	0.71366	(0161) 715 231	False	True	800	2200
+Station Road	Yate	Bristol	Avon	GB	BS374	51.54154	-2.41278	(0161) 715 857	False	True	600	2300
+Station Road	Yate	Bristol	Avon	GB	BS374	51.54156	-2.41292	(0161) 715 134	False	False	730	2330
+Borough Fields	Wootton Bassett	Swindon	Wiltshire	GB	SN4 7	51.54295	-1.90433	(0161) 715 822	False	True	800	2200
+107 Kingsgate Road	NW6	London	London	GB	NW6 2	51.54435	-0.19634	(0161) 715 517	False	False	1000	2000
+Devizes Road	Swindon	Swindon	Wiltshire	GB	SN1 4	51.55141	-1.77716	(0161) 715 380	False	False	700	1800
+Link Avenue	Swindon	Swindon	Wiltshire	GB	SN5 7	51.55983	-1.83002	(0161) 715 399	False	True	800	2200
+Regent Street	Swindon	Swindon	Wiltshire	GB	SN1 1	51.56101	-1.78467	(0161) 715 795	False	True	700	1800
+Runnymede Chase	Benfleet	Benfleet	Essex	GB	SS7 3	51.5619	0.58424	(0161) 715 273	False	False	900	2400
+B4289	Swindon	Swindon	Wiltshire	GB	SN2 2	51.56421	-1.79769	(0161) 715 743	False	True	800	2200
+South Street	Romford	Romford	Essex	GB	RM1 1	51.57719	0.18165	(0161) 715 779	False	False	700	1800
+Selborne Road	E17	London	London	GB	E17 7	51.58278	-0.02371	(0161) 715 693	True	True	700	1800
+Forest Road	E17	London	London	GB	E17 3	51.59019	-0.01239	(0161) 715 301	False	True	800	2200
+Edgware Road	NW9	London	London	GB	NW9 5	51.59368	-0.25938	(0161) 715 265	False	True	700	1800
+Alexandra Palace Way	N22	London	London	GB	N22 7	51.59393	-0.12979	(0161) 715 658	False	False	600	2300
+High Road	N22	London	London	GB	N22 6	51.59417	-0.10838	(0161) 715 800	False	True	800	2200
+Station Road	Edgware	Edgware	Middlesex	GB	HA8 7	51.61342	-0.27621	(0161) 715 506	False	True	800	2200
+High Street	Brentwood	Brentwood	Essex	GB	CM144	51.62015	0.30218	(0161) 715 112	False	False	900	2400
+Queen Victoria Road	High Wycombe	High Wycombe	Buckinghamshire	GB	HP111	51.62758	-0.74944	(0161) 715 231	False	True	700	1800
+General Rees Square	Cwmbran	Cwmbran	Gwent	GB	NP441	51.65386	-3.02268	(0161) 715 268	False	False	600	2300
+Eleanor Cross Road	Waltham Cross	Waltham Cross	Hertfordshire	GB	EN8 7	51.68593	-0.03169	(0161) 715 171	False	False	700	1800
+Lewis Street	Pembroke Dock	Pembroke Dock	Dyfed	GB	SA726	51.69345	-4.94143	(0161) 715 827	False	True	800	2200
+Tindal Street	Chelmsford	Chelmsford	Essex	GB	CM1 1	51.73427	0.47253	(0161) 715 481	False	False	700	1800
+Duke Street	Chelmsford	Chelmsford	Essex	GB	CM1 1	51.73684	0.46595	(0161) 715 766	False	True	800	2200
+Glebeland Street	Merthyr Tydfil	Merthyr Tydfil	Mid Glamorgan	GB	CF478	51.74622	-3.37832	(0161) 715 540	False	False	700	1800
+Wolsey Road	Hemel Hempstead	Hemel Hempstead	Hertfordshire	GB	HP2 4	51.74835	-0.47115	(0161) 715 380	False	True	800	2200
+New Kent Road	St Albans	St Albans	Hertfordshire	GB	AL1 3	51.75072	-0.33587	(0161) 715 259	False	True	700	1800
+Upper Dagnall Street	St Albans	St Albans	Hertfordshire	GB	AL3 5	51.75223	-0.34044	(0161) 715 573	False	False	600	2300
+Marlowes	Hemel Hempstead	Hemel Hempstead	Hertfordshire	GB	HP1 1	51.75412	-0.47274	(0161) 715 422	True	True	700	1800
+Station Road	Clacton on Sea	Clacton on Sea	Essex	GB	CO151	51.79176	1.15384	(0161) 715 887	True	True	900	2400
+Station Way	Aylesbury	Aylesbury	Buckinghamshire	GB	HP201	51.81427	-0.81426	(0161) 715 298	False	True	800	2200
+Frogmore Street	Abergavenny	Abergavenny	Gwent	GB	NP7 5	51.82353	-3.01957	(0161) 715 155	False	True	600	2300
+Bodiam Avenue	Gloucester	Gloucester	Clwyd	GB	GL4 0	51.82675	-2.26359	(0161) 715 566	False	False	900	2400
+Market Street	Bishops Stortford	Bishops Stortford	Hertfordshire	GB	CM233	51.87097	0.15941	(0161) 715 826	False	False	730	2330
+Silver Street	Luton	Luton	Bedfordshire	GB	LU1 2	51.88007	-0.41531	(0161) 715 725	False	True	800	2200
+Church Street	Dunstable	Dunstable	Bedfordshire	GB	LU5 4	51.88663	-0.51936	(0161) 715 112	True	True	700	1800
+Southway	Colchester	Colchester	Essex	GB	CO1 2	51.88697	0.89588	(0161) 715 732	False	False	600	2300
+Head Street	Colchester	Colchester	Essex	GB	CO1 1	51.8883	0.89643	(0161) 715 394	False	True	800	2200
+Trinity Street	Colchester	Colchester	Essex	GB	CO1 1	51.88834	0.8994	(0161) 715 374	False	True	700	1800
+Church Street	Colchester	Colchester	Essex	GB	CO1 1	51.88862	0.89447	(0161) 715 861	False	False	700	1800
+Pingle Drive	Bicester	Bicester	Oxfordshire	GB	OX6 7	51.89174	-1.15308	(0161) 715 989	False	True	600	2300
+Imperial Square	Cheltenham	Cheltenham	Clwyd	GB	GL501	51.89737	-2.07761	(0161) 715 535	False	False	700	1800
+High Street	Cheltenham	Cheltenham	Clwyd	GB	GL501	51.89953	-2.07258	(0161) 715 437	False	True	800	2200
+Swingate	Stevenage	Stevenage	Hertfordshire	GB	SG1 1	51.90289	-0.2036	(0161) 715 323	False	False	900	2400
+Fairlands Way	Stevenage	Stevenage	Hertfordshire	GB	SG1 1	51.90499	-0.20265	(0161) 715 858	False	True	800	2200
+Duncombe Street	Milton Keynes	Milton Keynes	Buckinghamshire	GB	MK2 2	51.99284	-0.73439	(0161) 715 204	False	False	700	1800
+Midsummer Boulevard	Central Milton Keynes	Milton Keynes	Buckinghamshire	GB	MK9 3	52.04217	-0.75639	(0161) 715 290	False	False	1000	2000
+Parsons Street	Banbury	Banbury	Oxfordshire	GB	OX168	52.06243	-1.33699	(0161) 715 240	False	True	800	2200
+Horne Lane	Bedford	Bedford	Bedfordshire	GB	MK401	52.13548	-0.46931	(0161) 715 740	False	False	700	1800
+Broad Street	Worcester	Worcester	Worcestershire	GB	WR1 3	52.19242	-2.22425	(0161) 715 656	True	True	900	2400
+Fitzroy Street	Cambridge	Cambridge	Cambridgeshire	GB	CB1 1	52.20674	0.13144	(0161) 715 575	False	False	700	1800
+Parade	Leamington Spa	Leamington Spa	Warwickshire	GB	CV324	52.29136	-1.53559	(0161) 715 872	False	True	1000	2000
+Arundel Road	Coventry	Coventry	West Midlands	GB	CV3 5	52.3877	-1.50101	(0161) 715 559	True	True	600	2300
+Vicar Street	Kidderminster	Kidderminster	Worcestershire	GB	DY102	52.38825	-2.24904	(0161) 715 921	False	False	700	1800
+Prior Deram Walk	Coventry	Coventry	West Midlands	GB	CV4 8	52.39456	-1.56097	(0161) 715 964	False	False	800	2200
+Market Street	Ely	Ely	Cambridgeshire	GB	CB7 4	52.39944	0.26661	(0161) 715 193	True	False	700	1800
+24 Smithford Way	Coventry	Coventry	West Midlands	GB	CV1 1	52.40935	-1.51261	(0161) 715 979	False	True	700	1800
+38 High Street	Birmingham	Birmingham	West Midlands	GB	B4  7	52.47905	-1.8947	(0161) 715 848	False	False	600	2300
+New Street	Birmingham	Birmingham	West Midlands	GB	B2  4	52.47921	-1.89919	(0161) 715 134	False	True	800	2200
+Cannon Street	Birmingham	Birmingham	West Midlands	GB	B2  5	52.47997	-1.89801	(0161) 715 840	False	False	700	1800
+George Street	Corby	Corby	Northamptonshire	GB	NN171	52.48736	-0.70379	(0161) 715 902	False	True	800	2200
+Upper Clifton Road	Sutton Coldfield	Sutton Coldfield	West Midlands	GB	B72 1	52.56619	-1.82458	(0161) 715 644	False	True	700	1800
+Exchange Street	Peterborough	Peterborough	Cambridgeshire	GB	PE1 1	52.57296	-0.24305	(0161) 715 310	False	False	700	1800
+Victoria Street	Wolverhampton	Wolverhampton	West Midlands	GB	WV1 3	52.5848	-2.12945	(0161) 715 669	True	False	730	2330
+Silver Street	Leicester	Leicester	Leicestershire	GB	LE1 5	52.63533	-1.13511	(0161) 715 229	False	False	600	2300
+Belgrave Gate	Leicester	Leicester	Leicestershire	GB	LE1 3	52.6372	-1.13246	(0161) 715 780	True	True	1000	2000
+Castle Dyke	Lichfield	Lichfield	Staffordshire	GB	WS136	52.68239	-1.82637	(0161) 715 356	False	True	800	2200
+Market Hall Street	Cannock	Cannock	Staffordshire	GB	WS111	52.68949	-2.03037	(0161) 715 699	True	True	600	2300
+St Marys Place	Shrewsbury	Shrewsbury	Shropshire	GB	SY1 1	52.70854	-2.75088	(0161) 715 108	False	True	800	2200
+Raven Meadows	Shrewsbury	Shrewsbury	Shropshire	GB	SY1 1	52.70934	-2.75467	(0161) 715 801	False	False	700	1800
+Raven Meadows	Shrewsbury	Shrewsbury	Shropshire	GB	SY1 1	52.7094	-2.75441	(0161) 715 902	False	True	800	2200
+Chester Street	Shrewsbury	Shrewsbury	Shropshire	GB	SY1 1	52.71244	-2.75126	(0161) 715 342	False	True	700	1800
+High Street	Coalville	Coalville	Leicestershire	GB	LE673	52.72495	-1.37275	(0161) 715 988	False	False	730	2330
+Priory Road	Spalding	Spalding	Lincolnshire	GB	PE112	52.78483	-0.15312	(0161) 715 671	False	True	800	2200
+Worthington Way	Burton Upon Trent	Burton Upon Trent	Staffordshire	GB	DE141	52.80372	-1.62928	(0161) 715 402	False	False	600	2300
+Princes Street	Stafford	Stafford	Staffordshire	GB	ST162	52.80827	-2.11924	(0161) 715 466	True	True	700	1800
+Lame Street	Stoke on Trent	Stoke on Trent	Staffordshire	GB	ST1 1	53.02673	-2.17616	(0161) 715 182	False	False	1000	2000
+Walkden Street	Mansfield	Mansfield	Nottinghamshire	GB	NG185	53.14478	-1.20142	(0161) 715 335	False	False	700	1800
+West Gate	Mansfield	Mansfield	Nottinghamshire	GB	NG181	53.14498	-1.19715	(0161) 715 396	False	True	800	2200
+High Street	Bangor	Bangor	Gwynedd	GB	LL571	53.22721	-4.12505	(0161) 715 720	False	False	700	1800
+Mill Street	MacClesfield	MacClesfield	Cheshire	GB	SK116	53.26014	-2.12582	(0161) 715 632	False	False	900	2400
+Rivington Road	Ellesmere Port	South Wirral	Merseyside	GB	CH650	53.27866	-2.90149	(0161) 715 791	True	True	730	2330
+Mostyn Street	Llandudno	Llandudno	Gwynedd	GB	LL302	53.32348	-3.82854	(0161) 715 416	False	False	800	2200
+Fourth Avenue	Runcorn	Runcorn	Cheshire	GB	WA7 2	53.32776	-2.69777	(0161) 715 218	True	False	700	1800
+North Parade	Speke	Liverpool	Merseyside	GB	L24 2	53.34171	-2.84035	(0161) 715 859	False	True	800	2200
+Salisbury Street	Birkenhead	Birkenhead	Merseyside	GB	CH412	53.38868	-3.02926	(0161) 715 385	False	False	600	2300
+Legh Street	Warrington	Warrington	Cheshire	GB	WA2 7	53.39128	-2.59771	(0161) 715 925	False	True	800	2200
+Great Underbank	Stockport	Stockport	Cheshire	GB	SK1 1	53.41082	-2.15935	(0161) 715 309	False	True	800	2200
+Warrington Road	Rainhill	Prescot	Merseyside	GB	L35 0	53.41654	-2.76658	(0161) 715 582	False	False	730	2330
+Cherryfield Drive	Kirkby	Liverpool	Merseyside	GB	L32 8	53.48094	-2.88664	(0161) 715 625	False	False	800	2200
+20 Church Street	Manchester	Manchester	Lancashire	GB	M4  1	53.48294	-2.23776	(0161) 715 418	False	False	700	1800
+Exchange Street	Manchester	Manchester	Lancashire	GB	M2  7	53.48319	-2.24515	(0161) 715 551	False	False	700	1800
+High Street	Manchester	Manchester	Lancashire	GB	M4  1	53.484	-2.23897	(0161) 715 716	False	True	800	2200
+John William Street	Eccles	Manchester	Lancashire	GB	M30 0	53.48459	-2.33631	(0161) 715 208	True	True	600	2300
+Gerard Street	Ashton in Makerfield	Wigan	Lancashire	GB	WN4 9	53.4869	-2.63717	(0161) 715 879	False	False	700	1800
+Warrington Street	Ashton Under Lyne	Ashton Under Lyne	Lancashire	GB	OL6 6	53.49044	-2.09527	(0161) 715 192	False	False	700	1800
+Swinton Hall Road	Swinton	Manchester	Lancashire	GB	M27 4	53.51297	-2.33667	(0161) 715 476	False	True	800	2200
+Central Square	Maghull	Liverpool	Merseyside	GB	L31 0	53.51644	-2.94364	(0161) 715 836	False	True	700	1800
+High Street	Oldham	Oldham	Lancashire	GB	OL1 3	53.54188	-2.11388	(0161) 715 196	False	False	900	2400
+Market Place	Wigan	Wigan	Lancashire	GB	WN1 1	53.54655	-2.6316	(0161) 715 850	True	True	600	2300
+Mesnes Street	Wigan	Wigan	Lancashire	GB	WN1 1	53.54859	-2.63145	(0161) 715 688	False	False	700	1800
+Stanley Road	Whitefield	Manchester	Lancashire	GB	M45 8	53.55161	-2.29564	(0161) 715 742	False	False	700	1800
+Ashby High Street	Scunthorpe	Scunthorpe	South Humberside	GB	DN162	53.56651	-0.64813	(0161) 715 275	False	False	700	1800
+Haymarket Street	Bury	Bury	Lancashire	GB	BL9 0	53.59261	-2.29721	(0161) 715 465	False	False	600	2300
+Station Road	Royston	Barnsley	South Yorkshire	GB	S71 4	53.60025	-1.4565	(0161) 715 858	False	True	800	2200
+Smith Street	Rochdale	Rochdale	Lancashire	GB	OL161	53.61768	-2.15404	(0161) 715 244	False	False	700	1800
+High Street	Huddersfield	Huddersfield	West Yorkshire	GB	HD1 2	53.64456	-1.78442	(0161) 715 646	False	True	800	2200
+Lord Street	Southport	Southport	Merseyside	GB	PR8 1	53.64779	-3.00679	(0161) 715 683	True	True	600	2300
+Union Street	Chorley	Chorley	Lancashire	GB	PR7 1	53.65453	-2.62942	(0161) 715 348	False	False	700	1800
+Estcourt Terrace	Goole	Goole	North Humberside	GB	DN145	53.70368	-0.87134	(0161) 715 683	False	False	900	2400
+Bradford Road	Batley	Batley	West Yorkshire	GB	WF175	53.71249	-1.6268	(0161) 715 262	False	True	800	2200
+King William Street	Blackburn	Blackburn	Lancashire	GB	BB1 7	53.74884	-2.4839	(0161) 715 574	False	False	700	1800
+St Annes Road West	Lytham St Annes	Lytham St Annes	Lancashire	GB	FY8 1	53.75174	-3.03111	(0161) 715 205	False	False	800	2200
+Blackburn Road	Accrington	Accrington	Lancashire	GB	BB5 1	53.75301	-2.36459	(0161) 715 404	True	False	700	1800
+Fishergate	Preston	Preston	Lancashire	GB	PR1 2	53.75738	-2.70539	(0161) 715 292	False	True	800	2200
+Grange Park Lane	Willerby	Hull	North Humberside	GB	HU106	53.76331	-0.45472	(0161) 715 581	False	False	700	1800
+New Lane	Selby	Selby	North Yorkshire	GB	YO8 4	53.78314	-1.07014	(0161) 715 991	False	True	800	2200
+Bankfield	Burnley	Burnley	Lancashire	GB	BB111	53.79053	-2.24302	(0161) 715 708	True	True	600	2300
+Godwin Street	Bradford	Bradford	West Yorkshire	GB	BD1 3	53.79485	-1.75607	(0161) 715 144	False	False	700	1800
+Cote Lane	Farsley	Pudsey	West Yorkshire	GB	LS285	53.80743	-1.68186	(0161) 715 547	False	True	900	2400
+Tithebarn Street	Poulton le Fylde	Poulton le Fylde	Lancashire	GB	FY6 7	53.84763	-2.99329	(0161) 715 199	True	True	730	2330
+Hanover Street	Keighley	Keighley	West Yorkshire	GB	BD213	53.86782	-1.90679	(0161) 715 906	False	False	700	1800
+Boroughgate	Otley	Otley	West Yorkshire	GB	LS211	53.90605	-1.68944	(0161) 715 780	False	True	800	2200
+Lord Street	Fleetwood	Fleetwood	Lancashire	GB	FY7 6	53.92117	-3.01462	(0161) 715 322	False	False	600	2300
+Market Place	Pocklington	York	North Yorkshire	GB	YO422	53.93056	-0.7788	(0161) 715 502	True	True	700	1800
+Penny Street	Lancaster	Lancaster	Lancashire	GB	LA1 1	54.04814	-2.80004	(0161) 715 735	False	False	600	2300
+Central Drive	Morecambe	Morecambe	Lancashire	GB	LA4 5	54.0719	-2.86431	(0161) 715 722	False	True	800	2200
+High Street	Boroughbridge	York	North Yorkshire	GB	YO519	54.09489	-1.39501	(0161) 715 739	False	True	700	1800
+Cornwallis Street	Barrow in Furness	Barrow in Furness	Cumbria	GB	LA142	54.11185	-3.22836	(0161) 715 474	False	False	730	2330
+Forshaw Street	Barrow in Furness	Barrow in Furness	Cumbria	GB	LA141	54.11236	-3.22814	(0161) 715 121	False	True	800	2200
+Market Place	Thirsk	Thirsk	North Yorkshire	GB	YO7 1	54.23238	-1.34287	(0161) 715 379	False	True	800	2200
+Stricklandgate	Kendal	Kendal	Cumbria	GB	LA9 4	54.32887	-2.74712	(0161) 715 615	False	True	800	2200
+Northgate	Darlington	Darlington	County Durham	GB	DL1 1	54.52641	-1.55439	(0161) 715 546	False	False	900	2400
+Allensway	Thornaby	Stockton on Tees	Cleveland	GB	TS179	54.53836	-1.2895	(0161) 715 441	False	False	700	1800
+Lowther Street	Whitehaven	Whitehaven	Cumbria	GB	CA287	54.54692	-3.58608	(0161) 715 186	False	False	800	2200
+Tower Street	Stockton on Tees	Stockton on Tees	Cleveland	GB	TS183	54.56108	-1.31231	(0161) 715 474	True	False	700	1800
+Grange Road	Middlesbrough	Middlesbrough	Cleveland	GB	TS1 2	54.5745	-1.23648	(0161) 715 291	False	False	700	1800
+Murray Road	Workington	Workington	Cumbria	GB	CA142	54.64358	-3.54789	(0161) 715 754	False	True	800	2200
+A596	Northside	Workington	Cumbria	GB	CA141	54.65513	-3.55346	(0161) 715 583	False	False	700	1800
+Oxford Road	Spennymoor	Spennymoor	County Durham	GB	DL166	54.6997	-1.6027	(0161) 715 432	False	False	700	1800
+Framwelgate Waterside	Durham	Durham	County Durham	GB	DH1 5	54.77708	-1.57841	(0161) 715 862	False	True	800	2200
+Newbottle Street	Houghton le Spring	Houghton le Spring	Tyne and Wear	GB	DH4 4	54.84447	-1.47165	(0161) 715 167	False	False	800	2200
+Medomsley Road	Consett	Consett	County Durham	GB	DH8 5	54.85296	-1.83088	(0161) 715 775	False	False	1000	2000
+Grapes Lane	Carlisle	Carlisle	Cumbria	GB	CA3 8	54.89502	-2.93373	(0161) 715 356	True	True	600	2300
+Rickergate	Carlisle	Carlisle	Cumbria	GB	CA3 8	54.8972	-2.93519	(0161) 715 470	False	True	800	2200
+West Street	Sunderland	Sunderland	Tyne and Wear	GB	SR1 3	54.90651	-1.3859	(0161) 715 268	False	False	700	1800
+Fore Street	Hexham	Hexham	Northumberland	GB	NE461	54.97081	-2.10076	(0161) 715 283	False	True	900	2400
+Morden Street	Newcastle Upon Tyne	Newcastle Upon Tyne	Tyne and Wear	GB	NE1 7	54.9761	-1.61619	(0161) 715 318	False	False	700	1800
+High Street	Wallsend	Wallsend	Tyne and Wear	GB	NE288	54.99053	-1.53738	(0161) 715 364	False	False	600	2300
+Front Street	Bedlington	Bedlington	Northumberland	GB	NE225	55.12923	-1.59034	(0161) 715 843	False	False	800	2200
+Front Street	Newbiggin By the Sea	Newbiggin By the Sea	Northumberland	GB	NE646	55.18583	-1.50924	(0161) 715 610	True	False	700	1800
+High Street	Ayr	Ayr	Ayrshire	GB	KA7 1	55.46117	-4.62914	(0161) 715 620	False	True	800	2200
+New Street	Irvine	Irvine	Ayrshire	GB	KA128	55.61116	-4.6723	(0161) 715 531	False	False	700	1800
+Rothesay Street	East Kilbride	Glasgow	Lanarkshire	GB	G75 0	55.75904	-4.17353	(0161) 715 264	False	True	800	2200
+Buchanan Street	Glasgow	Glasgow	Lanarkshire	GB	G1  2	55.86412	-4.25293	(0161) 715 700	True	True	600	2300
+177 Sauchiehall Street	Glasgow	Glasgow	Lanarkshire	GB	G2  3	55.86491	-4.25932	(0161) 715 726	False	False	700	1800
+Straiton Mains	Loanhead	Loanhead	Midlothian	GB	EH209	55.88624	-3.16102	(0161) 715 460	True	False	700	1800
+West Burn Street	Greenock	Greenock	Renfrewshire	GB	PA151	55.94927	-4.76035	(0161) 715 211	False	True	900	2400
+High Street	Dunfermline	Dunfermline	Fife	GB	KY127	56.0717	-3.45989	(0161) 715 669	False	False	1000	2000
+Murray Place	Stirling	Stirling	Stirlingshire	GB	FK7 7	56.11834	-3.93635	(0161) 715 400	True	True	700	1800
+High Street	Perth	Perth	Perthshire	GB	PH1 5	56.39665	-3.43119	(0161) 715 896	False	True	800	2200
+Victoria Road	Dundee	Dundee	Angus	GB	DD1 1	56.46492	-2.97056	(0161) 715 819	False	False	700	1800
+Gravesend	Arbroath	Arbroath	Angus	GB	DD111	56.55971	-2.58375	(0161) 715 501	False	False	800	2200
+Union Street	Aberdeen	Aberdeen	Aberdeenshire	GB	AB115	57.1458	-2.10144	(0161) 715 507	False	False	600	2300
+Marischal Street	Peterhead	Peterhead	Aberdeenshire	GB	AB421	57.50512	-1.77671	(0161) 715 255	False	True	800	2200
