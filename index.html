@@ -1,17 +1,26 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
+    <title>"Nature & Agriculture Sustainability Map"</title>
+
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <meta http-equiv="x-ua-compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="This tutorial shows how to create a simple store locator." />
+    <meta name="keywords" content="Microsoft maps, map, gis, API, SDK, tutorials, store locator, locator, coffee, contoso, clustering" />
+    <meta name="author" content="Microsoft Azure Maps" />
+
+    <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
     <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
     <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+
+    <!-- Add a reference to the Azure Maps Services Module JavaScript file. -->
     <script src="https://atlas.microsoft.com/sdk/javascript/service/2/atlas-service.min.js"></script>
-    <link rel="stylesheet" href="index.css" type="text/css">
+
+    <!-- Add references to the store locator JavaScript and CSS files. -->
+    <link rel="stylesheet" href="index.css" type="text/css" />
     <script src="index.js"></script>
-    <title>"Nature & Agriculture Sustainability Map"</title>
-   
 </head>
 <body>
     <header>
@@ -25,8 +34,11 @@
                 <button id="searchBtn" title="Search"></button>
             </div>
         </div>
+
         <div id="listPanel"></div>
+
         <div id="myMap"></div>
+
         <button id="myLocationBtn" title="My Location"></button>
     </main>
 </body>

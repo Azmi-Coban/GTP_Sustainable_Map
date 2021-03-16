@@ -36,9 +36,9 @@ function initialize() {
                 });
             }*/
 
-            //Alternatively, use an Azure Maps key. Get an Azure Maps key at https://azure.com/maps. NOTE: The primary key should be used as the key.
-            authType: 'subscriptionKey',
-            subscriptionKey: 'pVKDHqucck9RtwJiPCYpLzNNdfqDO6F9032x_i7o-PQ'
+           //Alternatively, use an Azure Maps key. Get an Azure Maps key at https://azure.com/maps. NOTE: The primary key should be used as the key.
+           authType: 'subscriptionKey',
+           subscriptionKey: 'pVKDHqucck9RtwJiPCYpLzNNdfqDO6F9032x_i7o-PQ'
         }
     });
 
