@@ -5,7 +5,7 @@ var maxClusterZoomLevel = 5;
 var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
 
 //The URL to the icon image. 
-var iconImageUrl = '<div><div class=\'pin bounce\'></div><div class=\'pulse\'></div></div>';
+var iconImageUrl = 'images/CoffeeIcon.png';
 
 //An array of country region ISO2 values to limit searches to.
 var countrySet = ['GB'];
@@ -107,10 +107,10 @@ function initialize() {
         map.imageSprite.add('myCustomIcon', iconImageUrl).then(function () {
 
             //Create a layer to render a coffe cup symbol above each bubble for an individual location.
-           /* iconLayer = new atlas.layer.SymbolLayer(datasource, null, {
+           iconLayer = new atlas.layer.SymbolLayer(datasource, null, {
                 iconOptions: {
                     //Pass in the id of the custom icon that was loaded into the map resources.
-                    htmlContent: 'myCustomIcon',
+                    image: 'myCustomIcon',
 
                     //Optionally scale the size of the icon.
                     font: ['SegoeUi-Bold'],
@@ -122,10 +122,10 @@ function initialize() {
                     allowOverlap: true
                 },
                 filter: ['!', ['has', 'point_count']] //Filter out clustered points from this layer.
-            });*/
-            map.markers.add(atlas.HtmlMarker(datasource, null, {
+            });
+           /* map.markers.add(atlas.HtmlMarker(datasource, null, {
                 htmlContent: "<div><div class='pin bounce'></div><div class='pulse'></div></div>",
-            }));
+            }));*/
 
             map.layers.add(iconLayer);
 
