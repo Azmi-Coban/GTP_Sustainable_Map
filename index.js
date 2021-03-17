@@ -171,9 +171,6 @@ function initialize() {
     datasource2 = new atlas.source.DataSource();
     map.sources.add(datasource2);
 
-    //Create a popup.
-    popup = new atlas.Popup();
-
     //Add a layers for rendering the data.
     var layers = [
         new atlas.layer.PolygonLayer(datasource2, null, {
@@ -194,9 +191,6 @@ function initialize() {
     ];
 
     map.layers.add(layers, 'labels');
-
-    //Add a click event to the layers to show a popup of what the user clicked on.
-    map.events.add('click', layers, featureClicked);
 
 /*
  *
@@ -220,44 +214,6 @@ function loadShapeFile(url) {
     });
 }
 
-function featureClicked(e) {
-    //Make sure the event occurred on a shape feature.
-    if (e.shapes && e.shapes.length > 0) {
-        //By default, show the popup where the mouse event occurred.
-        var pos = e.position;
-        var offset = [0, 0];
-        var properties;
-
-        if (e.shapes[0] instanceof atlas.Shape) {
-            properties = e.shapes[0].getProperties();
-
-            //If the shape is a point feature, show the popup at the points coordinate.
-            if (e.shapes[0].getType() === 'Point') {
-                pos = e.shapes[0].getCoordinates();
-                offset = [0, -18];
-            }
-        } else {
-            properties = e.shapes[0].properties;
-
-            //If the shape is a point feature, show the popup at the points coordinate.
-            if (e.shapes[0].type === 'Point') {
-                pos = e.shapes[0].geometry.coordinates;
-                offset = [0, -18];
-            }
-        }
-
-        //Update the content and position of the popup.
-        popup.setOptions({
-            //Create a table from the properties in the feature.
-            content: atlas.PopupTemplate.applyTemplate(properties),
-            position: pos,
-            pixelOffset: offset
-        });
-
-        //Open the popup.
-        popup.open(map);
-    }
-}
 
 function loadStoreData() {
     //Download the store location data.
