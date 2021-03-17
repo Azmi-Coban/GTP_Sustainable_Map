@@ -3,6 +3,7 @@ var maxClusterZoomLevel = 5;
 
 //The URL to the store location data.
 var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
+var loadShapeFile = 'data/Wessex_Map';
 
 //The URL to the icon image. 
 var iconImageUrl = 'images/CoffeeIcon.png';
