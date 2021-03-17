@@ -197,20 +197,7 @@ function initialize() {
         //Add a click event to the layers to show a popup of what the user clicked on.
         map.events.add('click', layers, featureClicked);
 
-        function loadShapeFile(url) {
-            sfpopup.close();
-
-            shp(url).then(function (data) {
-                //Load the shapefile into the data source and overwrite any existing data.
-                datasource2.setShapes(data);
-
-                //Bring the data into view on the map.
-                map.setCamera({
-                    bounds: atlas.data.BoundingBox.fromData(data),
-                    padding: 50
-                });
-            });
-        }
+        
     });
 
 /*
@@ -227,6 +214,20 @@ function initialize() {
  */
 }
 
+function loadShapeFile(url) {
+    sfpopup.close();
+
+    shp(url).then(function (data) {
+        //Load the shapefile into the data source and overwrite any existing data.
+        datasource2.setShapes(data);
+
+        //Bring the data into view on the map.
+        map.setCamera({
+            bounds: atlas.data.BoundingBox.fromData(data),
+            padding: 50
+        });
+    });
+}
 
 function loadStoreData() {
     //Download the store location data.
