@@ -10,7 +10,7 @@ var iconImageUrl = 'images/CoffeeIcon.png';
 //An array of country region ISO2 values to limit searches to.
 var countrySet = ['GB'];
 
-var map, popup, datasource, iconLayer, centerMarker, searchURL;
+var map, popup, datasource, datasource2, shapefilepopup, iconLayer, centerMarker, searchURL;
 var listItemTemplate = '<div class="listItem" onclick="itemSelected(\'{id}\')"><div class="listItem-title">{title}</div>{city}<br />Open until {closes}<br />{distance} miles away</div>';
 
 function initialize() {
@@ -59,6 +59,11 @@ function initialize() {
             position: 'top-right'
         });
 
+        //Create a style control and add it to the map.
+        map.controls.add(new atlas.control.StyleControl(), {
+            position: 'top-right'
+        });
+
         //Add an HTML marker to the map to indicate the center used for searching.
         centerMarker = new atlas.HtmlMarker({
             htmlContent: '<div class="mapCenterIcon"></div>',
@@ -72,9 +77,15 @@ function initialize() {
             cluster: true,
             clusterMaxZoom: maxClusterZoomLevel - 1
         });
-
         map.sources.add(datasource);
-    
+
+        //Create a data source to add your data to.
+        datasource2 = new atlas.source.DataSource();
+        map.sources.add(datasource2);
+
+        //Create a popup.
+        shapefilepopup = new atlas.Popup();
+
         //Load all the store data now that the data source has been defined. 
         loadStoreData();
 
@@ -161,6 +172,41 @@ function initialize() {
         });
     });
 
+    //Add a layers for rendering the data.
+    var layers = [
+        new atlas.layer.PolygonLayer(datasource2, null, {
+            filter: ['any', ['==', ['geometry-type'], 'Polygon'], ['==', ['geometry-type'], 'MultiPolygon']]	//Only render Polygon or MultiPolygon in this layer.
+        }),
+        new atlas.layer.LineLayer(datasource2, null, {
+            strokeColor: 'white',
+            strokeWidth: 2,
+            filter: ['any', ['==', ['geometry-type'], 'Polygon'], ['==', ['geometry-type'], 'MultiPolygon']]	//Only render Polygon or MultiPolygon in this layer.
+        }),
+        new atlas.layer.LineLayer(datasource2, null, {
+            strokeColor: 'red',
+            filter: ['any', ['==', ['geometry-type'], 'LineString'], ['==', ['geometry-type'], 'MultiLineString']]	//Only render LineString or MultiLineString in this layer.
+        }),
+        new atlas.layer.BubbleLayer(datasource2, null, {
+            filter: ['any', ['==', ['geometry-type'], 'Point'], ['==', ['geometry-type'], 'MultiPoint']] //Only render Point or MultiPoints in this layer.
+        })
+    ];
+
+    map.layers.add(layers, 'labels');
+
+    function loadShapeFile(url) {
+        popup.close();
+
+        shp(url).then(function (data) {
+            //Load the shapefile into the data source and overwrite any existing data. 
+            datasource2.setShapes(data);
+
+            //Bring the data into view on the map.
+            map.setCamera({
+                bounds: atlas.data.BoundingBox.fromData(data),
+                padding: 50
+            });
+        });
+    }
     /*
  * 
  * 

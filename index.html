@@ -22,49 +22,6 @@
     <link rel="stylesheet" href="index.css" type="text/css" />
     <script src="index.js"></script>
     <script src="Common/scripts/shp.min.js"></script>
-    <script type='text/javascript'>
-        var datasource2
-
-        //Create a data source to add your data to.
-        datasource2 = new atlas.source.DataSource();
-        map.sources.add(datasource2);
-
-        //Add a layers for rendering the data.
-        var layers = [
-            new atlas.layer.PolygonLayer(datasource2, null, {
-                filter: ['any', ['==', ['geometry-type'], 'Polygon'], ['==', ['geometry-type'], 'MultiPolygon']]	//Only render Polygon or MultiPolygon in this layer.
-            }),
-            new atlas.layer.LineLayer(datasource2, null, {
-                strokeColor: 'white',
-                strokeWidth: 2,
-                filter: ['any', ['==', ['geometry-type'], 'Polygon'], ['==', ['geometry-type'], 'MultiPolygon']]	//Only render Polygon or MultiPolygon in this layer.
-            }),
-            new atlas.layer.LineLayer(datasource2, null, {
-                strokeColor: 'red',
-                filter: ['any', ['==', ['geometry-type'], 'LineString'], ['==', ['geometry-type'], 'MultiLineString']]	//Only render LineString or MultiLineString in this layer.
-            }),
-            new atlas.layer.BubbleLayer(datasource2, null, {
-                filter: ['any', ['==', ['geometry-type'], 'Point'], ['==', ['geometry-type'], 'MultiPoint']] //Only render Point or MultiPoints in this layer.
-            })
-        ];
-
-        map.layers.add(layers, 'labels');
-
-        function loadShapeFile(url) {
-            popup.close();
-
-            shp(url).then(function (data) {
-                //Load the shapefile into the data source and overwrite any existing data. 
-                datasource2.setShapes(data);
-
-                //Bring the data into view on the map.
-                map.setCamera({
-                    bounds: atlas.data.BoundingBox.fromData(data),
-                    padding: 50
-                });
-            });
-        }
-    </script>
 </head>
 <body>
     <header>
