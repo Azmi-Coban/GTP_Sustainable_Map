@@ -1,52 +1,56 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>"Nature & Agriculture Sustainability Map"</title>
+    <head>
+        <title>"Nature & Agriculture Sustainability Map"</title>
 
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="This tutorial shows how to create a simple store locator." />
-    <meta name="keywords" content="Microsoft maps, map, gis, API, SDK, tutorials, store locator, locator, coffee, contoso, clustering" />
-    <meta name="author" content="Microsoft Azure Maps" />
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="This tutorial shows how to create a simple store locator." />
+        <meta name="keywords" content="Microsoft maps, map, gis, API, SDK, tutorials, store locator, locator, coffee, contoso, clustering" />
+        <meta name="author" content="Microsoft Azure Maps" />
 
-    <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
-    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
-    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+        <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
+        <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
+        <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
 
-    <!-- Add a reference to the Azure Maps Services Module JavaScript file. -->
-    <script src="https://atlas.microsoft.com/sdk/javascript/service/2/atlas-service.min.js"></script>
+        <!-- Add a reference to the Azure Maps Services Module JavaScript file. -->
+        <script src="https://atlas.microsoft.com/sdk/javascript/service/2/atlas-service.min.js"></script>
 
-    <!-- Add references to the store locator JavaScript and CSS files. -->
-    <link rel="stylesheet" href="index.css" type="text/css" />
-    <script src="index.js"></script>
-    <script src="Common/scripts/shp.min.js"></script>
-</head >
-            <body>
-                <header>
-                    <img src="images/Logo.png" />
-                    <span>Sustainability Map</span>
-                </header>
+        <!-- Add references to the store locator JavaScript and CSS files. -->
+        <link rel="stylesheet" href="index.css" type="text/css" />
+        <script src="index.js"></script>
+        <script src="Common/scripts/shp.min.js"></script>
+    </head >
+    <body>
+        <header>
+            <img src="images/Logo.png" />
+            <span>Sustainability Map</span>
+        </header>
 
-                <div style="position:absolute;top:10px;left:10px;background-color:white;border-radius:5px;padding:5px;">
-                    Load Shapefile:<br />
-                    <input type="button" onclick="loadShapeFile('data/Wessex_Map')" value="Greater London UK Regions (projected)" /><br />
+        <div style="position:absolute;top:10px;left:10px;background-color:white;border-radius:5px;padding:5px;">
+            Load Shapefile:<br />
+            <!-- Rounded switch -->
+            <label class="switch" for="roundChk">
+                <input type="checkbox" id="roundChk" onclick="slideChkBox()" /> <!-- value="Greater London UK Regions (projected)" /><br /> --> 
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <main>
+            <div class="searchPanel">
+                <div>
+                <input id="searchTbx" type="search" placeholder="Find a sustainable business" />
+                <button id="searchBtn" title="Search"></button>
                 </div>
+            </div>
 
-                <main>
-                    <div class="searchPanel">
-                        <div>
-                            <input id="searchTbx" type="search" placeholder="Find a sustainable business" />
-                            <button id="searchBtn" title="Search"></button>
-                        </div>
-                    </div>
+            <div id="listPanel"></div>
 
-                    <div id="listPanel"></div>
+            <div id="myMap"></div>
 
-                    <div id="myMap"></div>
-
-                    <button id="myLocationBtn" title="My Location"></button>
-                </main>
-            </body>
+            <button id="myLocationBtn" title="My Location"></button>
+        </main>
+    </body>
 </html >

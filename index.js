@@ -229,6 +229,25 @@ function loadShapeFile(url) {
     });
 }
 
+function blankShapeFile(url) {
+
+    sfpopup.close();
+
+    shp(url).then(function (data) {
+        //Load the shapefile into the data source and overwrite any existing data.
+        datasource2.setShapes(data);
+    });
+}
+
+function slideChkBox() {
+    var slideBox = document.getElementById("roundChk");
+    if (slideBox.checked == true) {
+        loadShapeFile('data/Wessex_Map');
+    } else {
+        blankShapeFile('data/BlankUK');
+    }
+}
+
 function loadStoreData() {
     //Download the store location data.
     fetch(storeLocationDataUrl)
