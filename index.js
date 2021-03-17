@@ -73,7 +73,11 @@ function initialize() {
             clusterMaxZoom: maxClusterZoomLevel - 1
         });
 
+        //Create a data source to add your data to.
+        datasource2 = new atlas.source.DataSource();
+
         map.sources.add(datasource);
+        map.sources.add(datasource2);
 
         //Load all the store data now that the data source has been defined. 
         loadStoreData();
@@ -166,10 +170,6 @@ function initialize() {
  * 
  * 
  */
-
-    //Create a data source to add your data to.
-    datasource2 = new atlas.source.DataSource();
-    map.sources.add(datasource2);
 
     //Add a layers for rendering the data.
     var layers = [
