@@ -10,7 +10,7 @@ var iconImageUrl = 'images/CoffeeIcon.png';
 //An array of country region ISO2 values to limit searches to.
 var countrySet = ['GB'];
 
-var map, popup, datasource, iconLayer, centerMarker, searchURL;
+var map, popup, datasource, datasource2, iconLayer, centerMarker, searchURL;
 var listItemTemplate = '<div class="listItem" onclick="itemSelected(\'{id}\')"><div class="listItem-title">{title}</div>{city}<br />Open until {closes}<br />{distance} miles away</div>';
 
 function initialize() {
