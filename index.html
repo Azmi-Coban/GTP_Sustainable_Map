@@ -22,31 +22,83 @@
     <link rel="stylesheet" href="index.css" type="text/css" />
     <script src="index.js"></script>
     <script src="Common/scripts/shp.min.js"></script>
-</head>
-<body>
-    <header>
-        <img src="images/Logo.png" />
-        <span>Sustainability Map</span>
-    </header>
+    <script type='text/javascript'>
+        var datasource2, sfpopup;
 
-    <div style="position:absolute;top:10px;left:10px;background-color:white;border-radius:5px;padding:5px;">
-        Load Shapefile:<br />
-        <input type="button" onclick="loadShapeFile('data/Wessex_Map')" value="Greater London UK Regions (projected)" /><br />
-    </div>
+        //Create a data source to add your data to.
+        datasource2 = new atlas.source.DataSource();
+        map.sources.add(datasource2);
 
-    <main>
-        <div class="searchPanel">
-            <div>
-                <input id="searchTbx" type="search" placeholder="Find a sustainable business" />
-                <button id="searchBtn" title="Search"></button>
-            </div>
-        </div>
+        //Create a popup.
+        popup = new atlas.Popup();
 
-        <div id="listPanel"></div>
+        //Add a layers for rendering the data.
+        var layers = [
+            new atlas.layer.PolygonLayer(datasource2, null, {
+                filter: ['any', ['==', ['geometry-type'], 'Polygon'], ['==', ['geometry-type'], 'MultiPolygon']]	//Only render Polygon or MultiPolygon in this layer.
+            }),
+            new atlas.layer.LineLayer(datasource2, null, {
+                strokeColor: 'white',
+                strokeWidth: 2,
+                filter: ['any', ['==', ['geometry-type'], 'Polygon'], ['==', ['geometry-type'], 'MultiPolygon']]	//Only render Polygon or MultiPolygon in this layer.
+            }),
+            new atlas.layer.LineLayer(datasource2, null, {
+                strokeColor: 'red',
+                filter: ['any', ['==', ['geometry-type'], 'LineString'], ['==', ['geometry-type'], 'MultiLineString']]	//Only render LineString or MultiLineString in this layer.
+            }),
+            new atlas.layer.BubbleLayer(datasource2, null, {
+                filter: ['any', ['==', ['geometry-type'], 'Point'], ['==', ['geometry-type'], 'MultiPoint']] //Only render Point or MultiPoints in this layer.
+            })
+        ];
 
-        <div id="myMap"></div>
+        map.layers.add(layers, 'labels');
 
-        <button id="myLocationBtn" title="My Location"></button>
-    </main>
-</body>
-</html>
+        //Add a click event to the layers to show a popup of what the user clicked on.
+        map.events.add('click', layers, featureClicked);
+                });
+            }
+
+        function loadShapeFile(url) {
+            popup.close();
+
+            shp(url).then(function (data) {
+                //Load the shapefile into the data source and overwrite any existing data.
+                datasource2.setShapes(data);
+
+                //Bring the data into view on the map.
+                map.setCamera({
+                    bounds: atlas.data.BoundingBox.fromData(data),
+                    padding: 50
+                });
+            });
+        }
+    </script>
+
+</head >
+            <body>
+                <header>
+                    <img src="images/Logo.png" />
+                    <span>Sustainability Map</span>
+                </header>
+
+                <div style="position:absolute;top:10px;left:10px;background-color:white;border-radius:5px;padding:5px;">
+                    Load Shapefile:<br />
+                    <input type="button" onclick="loadShapeFile('data/Wessex_Map')" value="Greater London UK Regions (projected)" /><br />
+                </div>
+
+                <main>
+                    <div class="searchPanel">
+                        <div>
+                            <input id="searchTbx" type="search" placeholder="Find a sustainable business" />
+                            <button id="searchBtn" title="Search"></button>
+                        </div>
+                    </div>
+
+                    <div id="listPanel"></div>
+
+                    <div id="myMap"></div>
+
+                    <button id="myLocationBtn" title="My Location"></button>
+                </main>
+            </body>
+</html >
