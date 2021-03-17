@@ -61,7 +61,7 @@ function initialize() {
 
         //Create a style control and add it to the map.
         map.controls.add(new atlas.control.StyleControl({
-            mapStyles: ['all']
+            mapStyles: 'all'
         }), {
             position: 'bottom-right'
         });
