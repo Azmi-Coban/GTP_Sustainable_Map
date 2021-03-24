@@ -119,6 +119,7 @@ function initialize() {
                     image: 'myCustomIcon',
 
                     //Optionally scale the size of the icon.
+                    size: '5%',
                     font: ['SegoeUi-Bold'],
 
                     //Anchor the center of the icon image to the coordinate.
