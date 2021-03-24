@@ -1,4 +1,23 @@
 AddressLine	City	Municipality	AdminDivision	Country	PostCode	Latitude	Longitude	Phone	IsWiFiHotSpot	IsWheelchairAccessible	Opens	Closes
-Causewayhead	Penzance	Penzance	Cornwall	GB	TR182	50.11982	-5.53867	(0161) 715 461	False	False	900	2400
 1A Acland Road	Dorchester	Dorset		GB	DT1 1EF	50.71414	-2.4352					
 "Operations Centre , Claverton Down Road, Claverton Down"	Bath	Avon		GB	BA2 7WW	51.365669	-2.32073					
+"New Forest National Park Authority
+Lymington Town Hall
+Avenue Road
+
+"	Lymington	Hampshire		GB	SO41 9ZG	50.76047	-1.546359					
+"The Sustainability Centre 
+?Droxford Road,
+East Meon
+"	Hants	Hampshire		GB	?GU32 1HR	50.967308	-1.037549					
+"The Guildhall, City Offices, Colebrook St"	Winchester	Dorset		GB	 SO23 9LJ	51.061	-1.311372					
+5 Brixeys Lane	Wareham	Dorset		GB	BH20 4HL	50.688594	-2.109531					
+"Newhouse Farm, Church Lane"	East Boldre	Hampshire		GB	SO42 7WS	50.800276	-1.468766					
+"Hampshire Renewable Energy Co-operative
+The Innovation Centre
+Basing View
+
+"	Basingstoke	Berkshire		GB	RG21 4HG	51.267892	-1.077497					
+"The Volunteer Centre, The Coach House, Acland Road"	Dorchester	Dorset		GB	DT1 1EF	50.714496	-2.434982					
+"Monkton Wyld Court, nr. Charmouth"	Bridport	Dorset		GB	DT6 6DQ	50.762934	-2.940403					
+Thames Valley Park	Reading	Berkshire		GB	RG6 1WG	51.461224	-0.926005					
