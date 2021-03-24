@@ -268,7 +268,7 @@ function loadStoreData() {
                 if (row.length >= numColumns) {
 
                     features.push(new atlas.data.Feature(new atlas.data.Point([parseFloat(row[header['Longitude']]), parseFloat(row[header['Latitude']])]), {
-                        AddressLine: row[header['AddressLine']],
+                        AddressLine: row[header['Name']],
                         City: row[header['City']],
                         Municipality: row[header['Municipality']],
                         Country: row[header['Country']],
@@ -398,7 +398,7 @@ function updateListItems() {
             properties = shape.getProperties();
 
             html.push('<div class="listItem" onclick="itemSelected(\'', shape.getId(), '\')"><div class="listItem-title">',
-                properties['AddressLine'],
+                properties['Name'],
                 '</div>',
 
                 //Get a formatted address line 2 value that consists of City, Municipality, AdminDivision, and PostCode.
@@ -419,41 +419,6 @@ function updateListItems() {
         //Scroll to the top of the list panel incase the user has scrolled down.
         listPanel.scrollTop = 0;
     }
-}
-
-//This converts a time in 2400 format into an AM/PM time or noon/midnight string.
-function getOpenTillTime(properties) {
-    var time = properties['Closes'];
-    var t = time / 100;
-
-    var sTime;
-
-    if (time === 1200) {
-        sTime = 'noon';
-    } else if (time === 0 || time === 2400) {
-        sTime = 'midnight';
-    } else {
-        sTime = Math.round(t) + ':';
-
-        //Get the minutes.
-        t = (t - Math.round(t)) * 100;
-
-        if (t === 0) {
-            sTime += '00';
-        } else if (t < 10) {
-            sTime += '0' + t;
-        } else {
-            sTime += Math.round(t);
-        }
-
-        if (time < 1200) {
-            sTime += ' AM';
-        } else {
-            sTime += ' PM';
-        }
-    }
-
-    return 'Open until ' + sTime;
 }
 
 //When a user clicks on a result in the side panel, look up the shape by its id value and show popup.
@@ -505,7 +470,7 @@ function showPopup(shape) {
     var html = ['<div class="storePopup">'];
 
     html.push('<div class="popupTitle">',
-        properties['AddressLine'],
+        properties['Name'],
         '<div class="popupSubTitle">',
         getAddressLine2(properties),
         '</div></div><div class="popupContent">',
@@ -522,18 +487,6 @@ function showPopup(shape) {
         properties['Phone'],
         '</a>'
     );
-
-    if (properties['IsWiFiHotSpot'] || properties['IsWheelchairAccessible']) {
-        html.push('<br/>Amenities: ');
-
-        if (properties['IsWiFiHotSpot']) {
-            html.push('<img src="images/WiFiIcon.png" title="Wi-Fi Hotspot"/>');
-        }
-
-        if (properties['IsWheelchairAccessible']) {
-            html.push('<img src="images/WheelChair-small.png" title="Wheelchair Accessible"/>');
-        }
-    }
 
     html.push('</div></div>');
 
