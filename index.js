@@ -199,19 +199,6 @@ function initialize() {
 
         
     });
-
-/*
- * 
- * 
- * 
- */
-
-    
-/*
- *
- *
- *
- */
 }
 
 function loadShapeFile(url) {
