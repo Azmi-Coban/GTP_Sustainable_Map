@@ -398,7 +398,7 @@ function updateListItems() {
             properties = shape.getProperties();
 
             html.push('<div class="listItem" onclick="itemSelected(\'', shape.getId(), '\')"><div class="listItem-title">',
-                properties['Name'],
+                properties['AddressLine'],
                 '</div>',
 
                 //Get a formatted address line 2 value that consists of City, Municipality, AdminDivision, and PostCode.
@@ -470,22 +470,14 @@ function showPopup(shape) {
     var html = ['<div class="storePopup">'];
 
     html.push('<div class="popupTitle">',
-        properties['Name'],
+        properties['AddressLine'],
         '<div class="popupSubTitle">',
         getAddressLine2(properties),
         '</div></div><div class="popupContent">',
 
-        //Convert the closing time into a nicely formated time.
-        getOpenTillTime(properties),
-
         //Add the distance information.  
         '<br/>', distance,
         ' miles away',
-        '<br /><img src="images/PhoneIcon.png" title="Phone Icon"/><a href="tel:',
-        properties['Phone'],
-        '">',
-        properties['Phone'],
-        '</a>'
     );
 
     html.push('</div></div>');
