@@ -273,7 +273,6 @@ function loadStoreData() {
                         Municipality: row[header['Municipality']],
                         Country: row[header['Country']],
                         PostCode: row[header['PostCode']],
-                        
                     }));
                 }
             }
@@ -510,17 +509,10 @@ function showPopup(shape) {
         getAddressLine2(properties),
         '</div></div><div class="popupContent">',
 
-        //Convert the closing time into a nicely formated time.
-        getOpenTillTime(properties),
-
         //Add the distance information.  
         '<br/>', distance,
         ' miles away',
-        '<br /><img src="images/PhoneIcon.png" title="Phone Icon"/><a href="tel:',
-        properties['Phone'],
-        '">',
-        properties['Phone'],
-        '</a>'
+       
     );
 
     if (properties['IsWiFiHotSpot'] || properties['IsWheelchairAccessible']) {
