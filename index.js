@@ -5,7 +5,7 @@ var maxClusterZoomLevel = 5;
 var storeLocationDataUrl = 'data/Wessex_Company_Dataset.txt';
 
 //The URL to the icon image. 
-var iconImageUrl = 'images/CoffeeIcon.png';
+var iconImageUrl = 'images/TreeIcon.png';
 
 //An array of country region ISO2 values to limit searches to.
 var countrySet = ['GB'];
