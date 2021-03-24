@@ -268,18 +268,14 @@ function loadStoreData() {
                 if (row.length >= numColumns) {
 
                     features.push(new atlas.data.Feature(new atlas.data.Point([parseFloat(row[header['Longitude']]), parseFloat(row[header['Latitude']])]), {
-                        AddressLine: row[header['AddressLine']],
+                        AddressLine: row[header['Name']],
                         City: row[header['City']],
                         Municipality: row[header['Municipality']],
-                        AdminDivision: row[header['AdminDivision']],
                         Country: row[header['Country']],
                         PostCode: row[header['PostCode']],
-                        Phone: row[header['Phone']],
-                        StoreType: row[header['StoreType']],
-                        IsWiFiHotSpot: (row[header['IsWiFiHotSpot']].toLowerCase() === 'true') ? true : false,
-                        IsWheelchairAccessible: (row[header['IsWheelchairAccessible']].toLowerCase() === 'true') ? true : false,
-                        Opens: parseInt(row[header['Opens']]),
-                        Closes: parseInt(row[header['Closes']])
+                        LegalStatus: row[header['Legal Status']],
+                        SectorFocus: row[header['Sector Focus']],
+                        WebSite: row[header['Website']],
                     }));
                 }
             }
