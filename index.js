@@ -268,7 +268,7 @@ function loadStoreData() {
                 if (row.length >= numColumns) {
 
                     features.push(new atlas.data.Feature(new atlas.data.Point([parseFloat(row[header['Longitude']]), parseFloat(row[header['Latitude']])]), {
-                        AddressLine: row[header['Name']],
+                        Name: row[header['Name']],
                         City: row[header['City']],
                         Municipality: row[header['Municipality']],
                         Country: row[header['Country']],
@@ -398,7 +398,7 @@ function updateListItems() {
             properties = shape.getProperties();
 
             html.push('<div class="listItem" onclick="itemSelected(\'', shape.getId(), '\')"><div class="listItem-title">',
-                properties['AddressLine'],
+                properties['Name'],
                 '</div>',
 
                 //Get a formatted address line 2 value that consists of City, Municipality, AdminDivision, and PostCode.
@@ -470,7 +470,7 @@ function showPopup(shape) {
     var html = ['<div class="storePopup">'];
 
     html.push('<div class="popupTitle">',
-        properties['AddressLine'],
+        properties['Name'],
         '<div class="popupSubTitle">',
         getAddressLine2(properties),
         '</div></div><div class="popupContent">',
