@@ -268,12 +268,18 @@ function loadStoreData() {
                 if (row.length >= numColumns) {
 
                     features.push(new atlas.data.Feature(new atlas.data.Point([parseFloat(row[header['Longitude']]), parseFloat(row[header['Latitude']])]), {
-                        Name: row[header['Name']],
+                        AddressLine: row[header['AddressLine']],
                         City: row[header['City']],
                         Municipality: row[header['Municipality']],
+                        AdminDivision: row[header['AdminDivision']],
                         Country: row[header['Country']],
                         PostCode: row[header['PostCode']],
+                        Phone: row[header['Phone']],
                         StoreType: row[header['StoreType']],
+                        IsWiFiHotSpot: (row[header['IsWiFiHotSpot']].toLowerCase() === 'true') ? true : false,
+                        IsWheelchairAccessible: (row[header['IsWheelchairAccessible']].toLowerCase() === 'true') ? true : false,
+                        Opens: parseInt(row[header['Opens']]),
+                        Closes: parseInt(row[header['Closes']])
                     }));
                 }
             }
@@ -398,7 +404,7 @@ function updateListItems() {
             properties = shape.getProperties();
 
             html.push('<div class="listItem" onclick="itemSelected(\'', shape.getId(), '\')"><div class="listItem-title">',
-                properties['Name'],
+                properties['AddressLine'],
                 '</div>',
 
                 //Get a formatted address line 2 value that consists of City, Municipality, AdminDivision, and PostCode.
@@ -419,6 +425,41 @@ function updateListItems() {
         //Scroll to the top of the list panel incase the user has scrolled down.
         listPanel.scrollTop = 0;
     }
+}
+
+//This converts a time in 2400 format into an AM/PM time or noon/midnight string.
+function getOpenTillTime(properties) {
+    var time = properties['Closes'];
+    var t = time / 100;
+
+    var sTime;
+
+    if (time === 1200) {
+        sTime = 'noon';
+    } else if (time === 0 || time === 2400) {
+        sTime = 'midnight';
+    } else {
+        sTime = Math.round(t) + ':';
+
+        //Get the minutes.
+        t = (t - Math.round(t)) * 100;
+
+        if (t === 0) {
+            sTime += '00';
+        } else if (t < 10) {
+            sTime += '0' + t;
+        } else {
+            sTime += Math.round(t);
+        }
+
+        if (time < 1200) {
+            sTime += ' AM';
+        } else {
+            sTime += ' PM';
+        }
+    }
+
+    return 'Open until ' + sTime;
 }
 
 //When a user clicks on a result in the side panel, look up the shape by its id value and show popup.
@@ -470,15 +511,35 @@ function showPopup(shape) {
     var html = ['<div class="storePopup">'];
 
     html.push('<div class="popupTitle">',
-        properties['Name'],
+        properties['AddressLine'],
         '<div class="popupSubTitle">',
         getAddressLine2(properties),
         '</div></div><div class="popupContent">',
 
+        //Convert the closing time into a nicely formated time.
+        getOpenTillTime(properties),
+
         //Add the distance information.  
         '<br/>', distance,
         ' miles away',
+        '<br /><img src="images/PhoneIcon.png" title="Phone Icon"/><a href="tel:',
+        properties['Phone'],
+        '">',
+        properties['Phone'],
+        '</a>'
     );
+
+    if (properties['IsWiFiHotSpot'] || properties['IsWheelchairAccessible']) {
+        html.push('<br/>Amenities: ');
+
+        if (properties['IsWiFiHotSpot']) {
+            html.push('<img src="images/WiFiIcon.png" title="Wi-Fi Hotspot"/>');
+        }
+
+        if (properties['IsWheelchairAccessible']) {
+            html.push('<img src="images/WheelChair-small.png" title="Wheelchair Accessible"/>');
+        }
+    }
 
     html.push('</div></div>');
 
