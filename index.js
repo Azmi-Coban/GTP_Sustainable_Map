@@ -268,14 +268,12 @@ function loadStoreData() {
                 if (row.length >= numColumns) {
 
                     features.push(new atlas.data.Feature(new atlas.data.Point([parseFloat(row[header['Longitude']]), parseFloat(row[header['Latitude']])]), {
-                        AddressLine: row[header['Name']],
+                        AddressLine: row[header['AddressLine']],
                         City: row[header['City']],
                         Municipality: row[header['Municipality']],
                         Country: row[header['Country']],
                         PostCode: row[header['PostCode']],
-                        LegalStatus: row[header['Legal Status']],
-                        SectorFocus: row[header['Sector Focus']],
-                        WebSite: row[header['Website']],
+                        StoreType: row[header['StoreType']],
                     }));
                 }
             }
